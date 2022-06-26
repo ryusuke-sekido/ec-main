@@ -1,0 +1,13 @@
+<h1>Admin::Items#show</h1>
+
+ <h2>タイトル</h2>
+ <p><%= @item.title %></p>
+
+ <h2>本文</h2>
+ <p><%= @item.body %></p>
+
+ <h1>画像</h1>
+ <p> <%= image_tag @item.image, size: "300x300" %></p>
+ <%= link_to '編集', edit_admin_item_path(@item.id) %>
+
+ <%= link_to '商品一覧', admin_items_path %>
